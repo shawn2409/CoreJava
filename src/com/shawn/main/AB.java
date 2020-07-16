@@ -4,25 +4,35 @@ package com.shawn.main;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class AB {
 
     public static void main(String[] args) {
 
-        Map<Integer, String> integerStringMap = new HashMap<>();
-        integerStringMap.put(1, "shawn");
-        integerStringMap.put(2, "ron");
-        integerStringMap.put(3, "bob");
+        Integer[] a = {1, 1, 2, 2, 2, 2, 3,};
+
+        Map<Integer, Integer> integerMap = new HashMap<>();
 
 
-        Iterator<Map.Entry<Integer, String>> itr = integerStringMap.entrySet().iterator();
+        for (int i = 0; i < a.length; i++) {
 
-        while(itr.hasNext())
-        {
-            Map.Entry<Integer, String> entry = itr.next();
-            System.out.println("Key = " + entry.getKey() +
-                    ", Value = " + entry.getValue());
+            if (integerMap.containsKey(a[i])) {
+                integerMap.put(a[i], a[i] + 1);
+            } else {
+                integerMap.put(a[i], 1);
+            }
+
         }
+        for (Map.Entry m : integerMap.entrySet()) {
+            System.out.println(m.getKey() + " " + m.getValue());
+        }
+
+
+
+
+        String[] b = {"er", "sd", "ss", "fs", "lp"};
+
 
     }
 }
