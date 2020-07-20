@@ -15,10 +15,14 @@ public class Last3CharUpper {
 
 		
 		String aaa = n.substring(n.length() - 3);
+		System.out.println(aaa);
+
+		System.out.println(n.substring(2,5));
 
 		String charUpper = aaa.toUpperCase();
+		System.out.println(charUpper);
 
-		String na = n.substring(0, n.length() - 3);
+		String na = n.substring(1, n.length() - 3);
 
 		return na + charUpper;
 	}
