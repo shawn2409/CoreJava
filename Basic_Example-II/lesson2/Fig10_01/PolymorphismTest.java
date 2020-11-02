@@ -9,12 +9,12 @@ public class PolymorphismTest
    public static void main( String args[] ) 
    {
       // assign superclass reference to superclass variable
-      Fig10_01.CommissionEmployee3 commissionEmployee = new Fig10_01.CommissionEmployee3(
+      CommissionEmployee3 commissionEmployee = new CommissionEmployee3( 
          "Sue", "Jones", "222-22-2222", 10000, .06 );                    
 
       // assign subclass reference to subclass variable
-      Fig10_01.BasePlusCommissionEmployee4 basePlusCommissionEmployee =
-         new Fig10_01.BasePlusCommissionEmployee4(
+      BasePlusCommissionEmployee4 basePlusCommissionEmployee = 
+         new BasePlusCommissionEmployee4( 
          "Bob", "Lewis", "333-33-3333", 5000, .04, 300 );         
 
       // invoke toString on superclass object using superclass variable
@@ -28,8 +28,9 @@ public class PolymorphismTest
          "reference to subclass object", 
          basePlusCommissionEmployee.toString() );
 
-      // invoke toString on subclass object using superclass variable Fig10_01.
-              Fig10_01.CommissionEmployee3 commissionEmployee2 = basePlusCommissionEmployee;
+      // invoke toString on subclass object using superclass variable
+      CommissionEmployee3 commissionEmployee2 = 
+         basePlusCommissionEmployee; 
       System.out.printf( "%s %s:\n\n%s\n", 
          "Call BasePlusCommissionEmployee4's toString with superclass",
          "reference to subclass object", commissionEmployee2.toString() );

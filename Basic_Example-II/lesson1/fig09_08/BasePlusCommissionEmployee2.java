@@ -1,9 +1,9 @@
-package lesson1.fig09_08;
+package fig09_08;
 
 // Fig. 9.8: BasePlusCommissionEmployee2.java
 // BasePlusCommissionEmployee2 inherits from class CommissionEmployee.
 
-public class BasePlusCommissionEmployee2 extends fig09_04_05.CommissionEmployee
+public class BasePlusCommissionEmployee2 extends CommissionEmployee
 {
    private double baseSalary; // base salary per week
 

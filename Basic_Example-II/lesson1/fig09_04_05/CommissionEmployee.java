@@ -5,11 +5,11 @@ package fig09_04_05;
 
 public class CommissionEmployee extends Object
 {
-   protected String firstName;
-   protected String lastName;
-   protected String socialSecurityNumber;
-   protected double grossSales; // gross weekly sales
-   protected double commissionRate; // commission percentage
+   private String firstName;
+   private String lastName;
+   private String socialSecurityNumber;
+   private double grossSales; // gross weekly sales
+   private double commissionRate; // commission percentage
 
    // five-argument constructor
    public CommissionEmployee( String first, String last, String ssn, 

@@ -8,7 +8,7 @@ public class CommissionEmployeeTest
    public static void main( String args[] ) 
    {
       // instantiate CommissionEmployee object
-      fig09_04_05.CommissionEmployee employee = new fig09_04_05.CommissionEmployee(
+      CommissionEmployee employee = new CommissionEmployee( 
          "Sue", "Jones", "222-22-2222", 10000, .06 );
       
       // get commission employee data
